@@ -1,4 +1,4 @@
-# here is an example of a line that is too long for an R document. it just keeps going!
+# here is an example of a line that is too long for an R document. it just keeps going! will it ever end? yes.
 fun = function(one)
 {
   one.plus.one <- oen + 1

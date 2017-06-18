@@ -52,9 +52,9 @@
 					<h2>Who Am I?</h2>
 					<p>
 						<ul>
-							<li>Web Developer</li>
-							<li>Japan enthusiast</li>
-							<li>R n00b</li>
+							<li class="fragment">Web Developer</li>
+							<li class="fragment">Japan enthusiast</li>
+							<li class="fragment">Newcomer to R</li>
 						</ul>
 					</p>
 				</section>
@@ -63,10 +63,10 @@
 					<h2>Today's Talk</h2>
 					<p>
 						<ol>
-							<li><span class="fragment">Coding style FTW</span></li>
-							<li><span class="fragment">R style matters</span></li>s
-							<li><span class="fragment">Linting</span></li>
-							<li><span class="fragment">Reformatting</span></li>
+							<li class="fragment">Coding style FTW</span></li>
+							<li class="fragment">R style matters</span></li>
+							<li class="fragment">Linting R</span></li>
+							<li class="fragment">Reformatting R</span></li>
 						</ol>
 					</p>
 				</section>
@@ -78,27 +78,32 @@
 					<h2>Meet your neighbors</h2>
 					<p style="color:white;">Share:
 						<ul style="color:white;">
-							<li>Your name</li>
-							<li>Why you like R</li>
-							<li>Something you think is cool</li>
-							<li>Etcetera</li>
+							<li class="fragment">Your name</li>
+							<li class="fragment">Why you like R</li>
+							<li class="fragment">Something you think is cool</li>
+							<li class="fragment">Etcetera</li>
 						</ul>
 					</p>
 				</section>
 
 				<section>
 					<section>
-						<h2>Coding style FTW</h2>
-						<p>Wikipedia says:</p>
-						<blockquote cite="https://en.wikipedia.org/wiki/Programming_style">
-							&ldquo;Programming style is a set of rules or guidelines used when writing the source code for a computer program.&rdquo;
-						</blockquote>
+						<h2>What is code style?</h2>
+						<span class="fragment">
+							<p>Wikipedia says:</p>
+							<blockquote cite="https://en.wikipedia.org/wiki/Programming_style">
+								&ldquo;Programming style is a set of rules or guidelines used when writing the source code for a computer program.&rdquo;
+							</blockquote>
+						</span>
 					</section>
 					<section data-background="https://media.giphy.com/media/bqalUGFYfyHzW/giphy.gif">
 					</section>
 					<section>
 						<h2>Why should we care about R style?</h2>
-						<p>Decide with the folks around you</p>
+						<p class="fragment">Decide with the folks around you</p>
+					</section>
+					<section>
+						<h2>What did you talk about?</h2>
 					</section>
 				</section>
 				
@@ -106,9 +111,9 @@
 					<section>
 						<h2>I care about code style because</h2>
 						<ul>
-							<li>Write understandable code</li>
-							<li>Avoid logic errors</li>
-							<li>Learn new languages, like R, correctly</li>
+							<li class="fragment">Write understandable code</li>
+							<li class="fragment">Avoid logic errors</li>
+							<li class="fragment">Learn new languages correctly</li>
 						</ul>
 						<aside class="notes">
 							This is for you in the future, too!
@@ -116,13 +121,14 @@
 					</section>
 					<section>
 						<blockquote>
-						&ldquo;Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo;
+						&ldquo;Always code as if the guy who ends up maintaining your code will be a <u>violent psychopath who knows where you live</u>.&rdquo;
 						</blockquote>
 					</section>
 				</section>
 
 				<section>
-					<h2>R style matters</h2>
+					<h2>R code comparison</h2>
+					<p class="fragment">Which is more <u>readable</u>?</p>
 					<aside class="notes">
 						Please remember i am a noob and be kind if you have questions.
 					</aside>
@@ -220,31 +226,40 @@ PredictCTR <- function(query, property, num.days,
 			</section>
 				</section>
 				
+				<section>
+					<h2>Good code style</h2>
+					<ul>
+						<li class="fragment">Reduces logic errors</li>
+						<li class="fragment">Improves readability</li>
+					</ul>
+				</section>
+				
 				<section data-background="https://media.giphy.com/media/sWIHPcLkmxDby/giphy.gif">
-					<h1>Is there one style to rule them all?</h1>
+					<h1 class="fragment">Is there one style to rule them all?</h1>
 				</section>
 				<section data-background="https://media.giphy.com/media/QIPEV0HWAiXVm/giphy.gif">
 				</section>
 				
 				<section>
 					<h2>Great places to start</h2>
-					<p><a href="https://google.github.io/styleguide/Rguide.xml">Google's R Style Guide</a></p>
-					<p><a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham's Style Guide</a></p>
-					<p class="fragment">... do you know any more?</p>
+					<p class="fragment"><a href="https://google.github.io/styleguide/Rguide.xml">Google's R Style Guide</a></p>
+					<p class="fragment"><a href="http://adv-r.had.co.nz/Style.html">Hadley Wickham's Style Guide</a></p>
+					<p class="fragment">Plus your own! (you do have one, right?)</p>
 				</section>
 
 				<section>
-					<h2>Let the computer help</h2>
-					<p>Use a linter for static code analysis fun</p>
+					<h2>Encourage good style</h2>
+					<p class="fragment">Let the computer help</p>
+					<p class="fragment">Use a linter for static code analysis fun</p>
 				</section>
 				
 				<section>
 					<h2>Lintr</h2>
 					<ul>
-						<li>Can do <a href="https://github.com/jimhester/lintr#available-linters">lots of things</a></li>
-						<li>Syntax errors</li>
-						<li>Style</li>
-						<li>Works on your favorite text editor / IDE</li>
+						<li class="fragment">Syntax errors</li>
+						<li class="fragment">Style</li>
+						<li class="fragment">Can do <a href="https://github.com/jimhester/lintr#available-linters">lots of things</a></li>
+						<li class="fragment">Works on <a href="https://github.com/jimhester/lintr#rstudio">your favorite text editor / IDE</a></li>
 					</ul>
 				</section>
 
@@ -254,22 +269,49 @@ PredictCTR <- function(query, property, num.days,
 
 				<section>
 					<h2>Don't like the defaults?</h2>
-					<p>Configure it with a <a href="https://github.com/jimhester/lintr#project-configuration">standard config file</a></p>
-					<p>Hack it or make your own new linter!</p>
+					<p class="fragment">Configure it with a <a href="https://github.com/jimhester/lintr#project-configuration">standard config file</a></p>
+					<p class="fragment">Hack it or make your own new linter!</p>
 				</section>
 				
 				<section>
 					<h2>Getting to know new code?</h2>
-					<p>Turn on lintr and go to town!</p>
-					<p>This is a great way to learn a new codebase.</p>
+					<p class="fragment">Turn on lintr and go to town!</p>
+					<p class="fragment">This is a great way to learn <a href="https://github.com/trending/r">a new codebase</a>.</p>
+				</section>
+				
+				<section>
+					<h2>You mean I need to do all those changes manually?</h2>
 				</section>
 				
 				<section data-background="https://media.giphy.com/media/bqalUGFYfyHzW/giphy.gif">
 				</section>
 				
 				<section>
-					<h2></h2>
+					<h2>Let the computer help</h2>
+						<p class="fragment">Use a formatter for automated formatting</p>
 				</section>
+				
+				<section>
+					<h2>FormatR</h2>
+					<ul>
+						<li class="fragment">Standardize line lengths</li>
+						<li class="fragment">Standardize indentation</li>
+						<li class="fragment">Replace = with <-</li>
+						<li class="fragment">And <a href="https://yihui.name/formatr/#2-reformat-r-code">much more</a></li>
+					</ul>
+				</section>
+
+				
+				<section>
+					<h1>DEMO</h1>
+				</section>
+				
+				
+				<section>
+					<h2>Thank you</h2>
+					<p class="fragment"><a href="https://github.com/kylesezhi/lintr-presentation">https://github.com/kylesezhi/lintr-presentation</a></p>
+				</section>
+
 				
 			</div>
 
